@@ -21,7 +21,7 @@ const errorHandler = require('./middlewares/error');
 const connectDB = require('./config/db');
 
 // load env vars
-require('dotenv').config({ path: './config/.env' });
+require('dotenv').config();
 
 //connect DB
 connectDB();
