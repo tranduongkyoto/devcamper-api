@@ -1,4 +1,4 @@
-# DevCamper API
+# DevCamper API (Project of a course in udemy(author: Brad Traversy))
 
 > Backend API for DevCamper application, which is a bootcamp directory website
 
