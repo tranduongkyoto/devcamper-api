@@ -44,8 +44,8 @@ app.use(cookieParser());
 app.use(
   session({
     secret: 'secret',
-    saveUninitialized: false,
-    resave: false,
+    saveUninitialized: true,
+    resave: true,
   })
 );
 // passport init
