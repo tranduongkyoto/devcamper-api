@@ -1,10 +1,10 @@
-# DevCamper API (Project of a course in udemy(author: Brad Traversy))
+# DevCamper API (Project of a course in udemy, author: Brad Traversy)
 
 > Backend API for DevCamper application, which is a bootcamp directory website
 
 ## Usage
 
-Rename "config/config.env.env" to "config/config.env" and update the values/settings to your own
+Rename ".env.env" to ".env" and update the values/settings to your own
 
 ## Install Dependencies
 
