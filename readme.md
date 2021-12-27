@@ -1,6 +1,8 @@
-# DevCamper API (Project of a course in udemy, author: Brad Traversy)
+# DevCamper API 
 
-> Backend API for DevCamper application, which is a bootcamp directory website
+> Project of a course(Node.js API Masterclass With Express & MongoDB) in udemy , author: Brad Traversy, link: https://www.udemy.com/course/nodejs-api-masterclass/
+> 
+> Backend API for DevCamper application
 
 ## Usage
 
