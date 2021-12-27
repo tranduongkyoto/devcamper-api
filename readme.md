@@ -1,8 +1,8 @@
 # DevCamper API 
 
-> Project of a course(Node.js API Masterclass With Express & MongoDB) in udemy , author: Brad Traversy
+> Project of a course(Node.js API Masterclass With Express & MongoDB) in Udemy , Author: Brad Traversy
 > 
-> Link: https://www.udemy.com/course/nodejs-api-masterclass/
+> Link to Udemy Course: https://www.udemy.com/course/nodejs-api-masterclass/
 > 
 > Backend API for DevCamper application
 
