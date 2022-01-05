@@ -1,5 +1,7 @@
 # DevCamper API 
 
+>Tech Stack: Nodejs, Express, MongoDB, Nodemailer, JWT
+>
 > Project of a course(Node.js API Masterclass With Express & MongoDB) in Udemy , Author: Brad Traversy
 > 
 > Link to Udemy Course: https://www.udemy.com/course/nodejs-api-masterclass/
