@@ -1,10 +1,16 @@
-# DevCamper API (Project of a course in udemy(author: Brad Traversy))
+# DevCamper API 
 
-> Backend API for DevCamper application, which is a bootcamp directory website
+>Tech Stack: Nodejs, Express, MongoDB, Nodemailer, JWT
+>
+> Project of a course(Node.js API Masterclass With Express & MongoDB) in Udemy , Author: Brad Traversy
+> 
+> Link to Udemy Course: https://www.udemy.com/course/nodejs-api-masterclass/
+> 
+> Backend API for DevCamper application
 
 ## Usage
 
-Rename "config/config.env.env" to "config/config.env" and update the values/settings to your own
+Rename ".env.env" to ".env" and update the values/settings to your own
 
 ## Install Dependencies
 
