@@ -1,7 +1,3 @@
-const User = require('./models/User');
-var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
-var passport = require('passport');
-var session = require('express-session');
 const path = require('path');
 const express = require('express');
 const logger = require('./middlewares/logger');
@@ -40,56 +36,7 @@ app.use(express.json());
 
 // Cookie parser
 app.use(cookieParser());
-// use session
-app.use(
-  session({
-    secret: 'secret',
-    saveUninitialized: true,
-    resave: true,
-  })
-);
-// passport init
-app.use(passport.initialize());
-app.use(passport.session());
-passport.serializeUser(function (user, done) {
-  done(null, user);
-});
 
-passport.deserializeUser(function (user, done) {
-  done(null, user);
-});
-passport.use(
-  new GoogleStrategy(
-    {
-      clientID: process.env.CLIENT_ID,
-      clientSecret: process.env.CLIENT_SECRET,
-      callbackURL: 'http://localhost:3000/auth/google/callback',
-    },
-    function (accessToken, refreshToken, profile, done) {
-      done(null, profile);
-    }
-  )
-);
-app.get(
-  '/auth/google',
-  passport.authenticate('google', {
-    scope: ['https://www.googleapis.com/auth/plus.login'],
-  })
-);
-app.get(
-  '/auth/google/callback',
-  passport.authenticate('google', { failureRedirect: '/login' }),
-  function (req, res) {
-    // console.log(req.session.passport.user);
-    res.redirect('/');
-  }
-);
-
-app.get('/logout', (req, res, next) => {
-  // req.session.destroy();
-  req.logout();
-  res.redirect('/');
-});
 //Dev logging middleware
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));

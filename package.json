@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server"
+    "dev": "nodemon server",
+    "build": "webpack",
+    "prod" : "node dist/api.bundle.js"
   },
   "author": "",
   "license": "ISC",
@@ -34,6 +36,8 @@
     "xss-clean": "^0.1.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.13"
+    "nodemon": "^2.0.13",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
   }
 }
